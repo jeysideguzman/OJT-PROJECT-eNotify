@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">e-notify</string>
+    <string name="default_web_client_id">1051789417161-kc4q1icfn24eqttndh3q3b136i3vhboe.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

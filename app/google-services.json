@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "385798075846",
+    "project_id": "e-notify-project",
+    "storage_bucket": "e-notify-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385798075846:android:b2fa902d48728fd544eec7",
+        "android_client_info": {
+          "package_name": "com.jeysidg.e_notify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385798075846-rqmfkqi8ns9gkpub1emrjr5kfhdegjau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jeysidg.e_notify",
+            "certificate_hash": "705bc00c48e49913c848ef21093cd9aca6c1cc10"
+          }
+        },
+        {
+          "client_id": "385798075846-fu2hp71jh3o98hh2pk9t907a8gudpvq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrvDCZxz1XjbQ8evqKO9xIp6c82n1qRIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385798075846-fu2hp71jh3o98hh2pk9t907a8gudpvq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

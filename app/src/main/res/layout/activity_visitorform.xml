@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebkg"
+    tools:context=".VisitorformActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/backbtn"
+            android:contentDescription="Back Button"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/profTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="66dp"
+                android:text="Visitor Form"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <!-- ET NAME-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/profTv"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/nameTIL"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/vnameEt"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Company AutoCompleteTextView -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/nameTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/contactpersonTIL"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/vContactPersonEt"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Person"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Department AutoCompleteTextView -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/contactpersonTIL"
+                android:hint="Company Client"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/companyclientTIL"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_companyClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email EditText -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/companyclientTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/purposeofvisitTIL"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/vPurposeOfVisitEt"
+                    android:inputType="textEmailAddress"
+                    android:hint="Purpose of Visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- SIGNI TextView -->
+            <TextView
+                android:id="@+id/SIGNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture your ID"
+                android:textSize="15sp"
+                android:layout_below="@id/purposeofvisitTIL"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+
+            <!-- Buttons to Save and Clear Signature -->
+
+            <Button
+                android:id="@+id/captureBtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/purposeofvisitTIL"
+                android:layout_marginStart="-142dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@id/SIGNI"
+                android:background="@drawable/changeprofpic" />
+
+
+            <ImageView
+                android:id="@+id/idPicIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/SIGNI"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/signature_background"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/timestampTextView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/notifyBtn" />
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/timestampTextView"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/notifyBtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/idPicIv"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/notifybtn"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

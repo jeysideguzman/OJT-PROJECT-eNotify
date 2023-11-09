@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor:"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/visitorNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor Name"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/vname"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+
+
+        <TextView
+            android:id="@+id/timestampTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/ClientTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company:"
+            android:layout_marginTop="-8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/visitorNameTv" />
+
+        <TextView
+            android:id="@+id/companyClientTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Client"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/ClientTv"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/visitorNameTv" />
+
+        <TextView
+            android:id="@+id/VisitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purpose:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/companyClientTv"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/purposeOfVisitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purpose of Visit"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/VisitTv"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/companyClientTv"
+            android:layout_marginTop="1dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

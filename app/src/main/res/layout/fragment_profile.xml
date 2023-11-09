@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profilebkg"
+    tools:context=".ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/TvMyProfile"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/profpic" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:text="Kathlene Ann M. Panuga"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@id/avatarIv"
+            android:textColor="@color/black"
+            android:layout_below="@id/TvMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_below="@id/nameTv"
+            android:text="jcdeguzman1218@gmail.com"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/avatarIv"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/editDetailBtn"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp">
+
+
+            <TextView
+                android:id="@+id/companyTv"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/rl1"
+                android:background="@drawable/depcombkg"
+                android:padding="10.5dp"
+                android:text="Company"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/departmentTv"
+                android:layout_width="172dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/depcombkg"
+                android:padding="10.5dp"
+                android:text="Department"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/editDetailBtn"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/emailTv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/editprofilebtn" />
+
+        <Button
+            android:id="@+id/notifHistoryBtn"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/notifhisbtn" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_recyclerView"
+            android:layout_width="360dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="5dp"
+
+            android:background="@drawable/btncorner"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/notifHistoryBtn"/>
+
+        <Button
+            android:id="@+id/changeProfileBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/avatarIv"
+            android:layout_marginStart="-38dp"
+            android:layout_marginTop="-24dp"
+            android:layout_toEndOf="@id/avatarIv"
+            android:background="@drawable/changeprofpic" />
+
+    </RelativeLayout>
+
+</ScrollView>

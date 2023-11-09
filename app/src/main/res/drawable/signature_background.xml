@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Color -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Border Stroke -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:color="@android:color/black"
+                android:width="2dp" /> <!-- Adjust the border thickness as needed -->
+        </shape>
+    </item>
+</layer-list>

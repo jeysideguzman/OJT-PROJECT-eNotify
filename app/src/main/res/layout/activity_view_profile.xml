@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebkg"
+    tools:context=".ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="417dp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Back Button"
+            android:src="@drawable/backbtn" />
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/profpic" />
+
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatarIv"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Kathlene Ann M. Panuga"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="jcdeguzman1218@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/emailTv"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/companyTv"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/depcombkg"
+                android:padding="10.5dp"
+                android:text="Company"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/departmentTv"
+                android:layout_width="172dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/depcombkg"
+                android:padding="10.5dp"
+                android:text="Department"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/notifHistoryBtn"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/notifhisbtn" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
